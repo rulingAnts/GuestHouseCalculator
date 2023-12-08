@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cost Estimation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cost Estimation</h1>
+        
+        <form id="estimationForm">
+            <label for="guestHouseSelect">Select Guest House:</label>
+            <select id="guestHouseSelect" required>
+                <option value="" disabled selected>Select Guest House</option>
+            </select>
+            
+            <label for="nights">Number of Nights:</label>
+            <input type="number" id="nights" required>
+            
+            <label for="truckKm">Truck Kilometers per Day:</label>
+            <input type="number" id="truckKm" required>
+            
+            <label for="carKm">Car Kilometers per Day:</label>
+            <input type="number" id="carKm" required>
+            
+            <label for="motorbikeKm">Motorbike Kilometers per Day:</label>
+            <input type="number" id="motorbikeKm" required>
+            
+            <button type="button" onclick="estimateCost()">Estimate Cost</button>
+        </form>
+        
+        <div id="estimatedCost"></div>
+    </div>
+
+    <script src="estimation.js"></script>
+</body>
+</html>
