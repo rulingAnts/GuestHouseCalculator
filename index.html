@@ -10,6 +10,7 @@
     <div class="container">
         <h1>Guest House Management</h1>
         <form id="guestHouseForm">
+            <input type="hidden" id="editIndex" value="">
             <label for="name">Name:</label>
             <input type="text" id="name" required>
             
@@ -39,4 +40,10 @@
 
     <script src="script.js"></script>
 </body>
+<script>
+    // Call updateGuestHousesList when the page loads
+    window.onload = function () {
+        updateGuestHousesList();
+    };
+</script>
 </html>
